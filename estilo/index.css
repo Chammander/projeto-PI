@@ -1,0 +1,14 @@
+.div-header-primeira, .div-header-terceiro, .div-header-segundo{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-header-primeira, .div-header-terceiro, footer{
+    background-color: #ffcccc;
+}
+
+.section-foote{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
