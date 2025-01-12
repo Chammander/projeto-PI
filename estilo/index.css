@@ -52,7 +52,7 @@ footer {
 }
 
 .img-balao-de-conversa,.img-caminhao-frete,.img-cartao-juros,.img-telefone{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .img-caminhao-frete,.img-cartao-juros{
@@ -63,16 +63,27 @@ footer {
     height: 50%;
 }
 
-.div-logo-beybyhair,.div-login,.div-favoritos,.div-carrinho{
+.div-login,.div-favoritos,.div-carrinho{
     height: 80px;
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.div-logo-beybyhair{
-    margin-left: 17%;
-    width: 160;
+.div-logo-beybyhair a{
+    margin-left: 30%;
+    height: 80px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.div-logo-beybyhair a:hover{
+    text-decoration: none;
+}
+
+.div-logo-beybyhair a h2{
+    padding-top: 16px;
 }
 
 .img-logo-beybyhair{
@@ -282,6 +293,59 @@ input#barra-pesquisa{
 
 /*Fim carrosel de marcas*/
 
+.section-novidades-bruna{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*  carrosel de produtos*/
+.div-lista-produto{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-lista-produto li{
+    list-style: none;
+    display: flex;
+}
+
+.div-lista-produto h2{
+    width: 100%;
+    text-align: center;
+}
+
+.div-lista-produto h3,p{
+    width: 100%;
+    text-align: center;
+}
+
+.lista-produto{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.div-produto{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-produto{
+    color: white;
+    background-color: #ffcccc;
+    height: 50px;
+    font-size: 25px;
+    font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+    border: #ffcccc;
+    border-radius: 5px;
+}
+
+/*   fim carrosel de produtos*/
+
 /*   FIM BOdyyy   */
 
 
@@ -332,12 +396,3 @@ input#barra-pesquisa{
     padding-right: 7px;
 }
 /*  FIM FOOTER  */
-
-
-
-
-
-
-
-
-
