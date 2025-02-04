@@ -1,8 +1,9 @@
 .section-corpo-login{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-end;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: flex-end;
 }
 
 .div-linha-entre-as-divis-login{
@@ -52,7 +53,6 @@
 .div-login-externo{
     width: 100%;
     display: flex;
-    justify-content: center;
     margin: 20px 0px;
 }
 
@@ -74,4 +74,21 @@
     border-style: solid;
     color: #551c1c;
     background-color: white;
+    margin-left: 40%;
+}
+
+.hr-login{
+    margin-right: 5%;
+    border-color: #eda3a3;
+    border-style:solid;
+    opacity: 40%;
+}
+
+.hr-login-baixo{
+    width: 80%;
+    height: 0px;
+    border-color: #eda3a3;
+    border-style: solid;
+    opacity: 40%;
+    margin-top: 30px;
 }

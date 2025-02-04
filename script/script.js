@@ -25,3 +25,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+/* carrinho de compras*/
+
+document.getElementById("finalizar-compra-carrinho").addEventListener("click",finalizar)

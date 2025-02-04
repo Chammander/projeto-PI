@@ -1,0 +1,82 @@
+.carrinho-section{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.carrinhon-compras{
+    width:80% ;
+}
+
+.carrinho-resumo hr{
+    color: #eda3a3;
+    border-style: solid;
+    width: 90%;
+    border-radius: 50%;
+    border-top: 0px;
+}
+
+.carrinho-resumo input{
+    border: none;
+    background-color: #fadce0;
+}
+
+.carrinho-resumo ::placeholder{
+    color: #eda3a3;
+    text-decoration: underline;
+}
+
+.carrinho-resumo{
+    width: 25%;
+    background-color: #fadce0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes-resumo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#finalizar-compra-carrinho{
+    margin: 20px 0px 5px 0px;
+}
+#continuar-comprando-carrinho{
+    margin: 5px 0px 20px 0px;
+}
+
+.total-pedido{
+    background-color: #FFCCCC;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho-resumo button{
+    color: #551c1c;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    width: 80%;
+}
+
+#botao-ok-cupom{
+    padding: 5px;
+    width: 15%;
+}
+
+.carrinho-resumo img{
+    height: 40px;
+}
+
+#finalizar-compra-carrinho{
+    background-color: #eda3a3;
+}
+
