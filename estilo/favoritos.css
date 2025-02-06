@@ -1,0 +1,55 @@
+.favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.favoritos-topo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.favoritos-topo h1{
+    font-size: xxx-large;
+    margin-left: 10px;
+}
+
+.favoritos-pagina{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.ordenar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ordenar select{
+    height: 30px;
+    width: 200px;
+    color: #551c1c;
+    border-color: #551c1c;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.produtos-favoritos img{
+    height: 450px;
+}
+
+.produtos-favoritos{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
