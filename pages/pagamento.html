@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de compras</title>
+    <title>Página de pagamento</title>
     <link rel="stylesheet" href="../estilo/index.css">
     <link rel="stylesheet" href="../estilo/default.css">
-    <link rel="stylesheet" href="../estilo/carrinho.css">
+    <link rel="stylesheet" href="../estilo/pagamento.css">
     <script src="../script/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
-
 <body>
     <header>
         <section class="section-primeira-faixa">
@@ -144,93 +140,82 @@
         </section>
     </header>
     <main>
-        <section class="carrinho-section">
-            <div class="carrinho-compras">
-                <h2>Minha Sacola</h2>
-                <table class="tabela-tabela">
+        <section>
+            <div class="pagamento-endereco">
+                <table class="entrega">
                     <thead>
                         <tr>
-                            <th><h3>PRODUTOS</h3></th>
-                            <th></th>
-                            <th><h3>QUANTIDADE</h3></th>
-                            <th><h3>TOTAL</h3></th>
-                            <th></th>
+                            <th><h2>ENTREGA</h2></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="produtos-carrinhos">
-                            <td class="produto"><img src="../img/produto-base.png" alt="base"></td>
-                            <td class="descricao"><strong>NIINA SECRETS HIDRA GLOW</strong>
-                            <h5>NIINA SECRETS</h5><p>Base hidra glow média cobertura.</p></td>
-                            <td class="quantidade-produtos"><input type="number" min="1"></td>
-                            <td class="preco-produto-1"><span>R$ 84,98</span></td>
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
-                                </svg></td>
-                            
+                        <tr>
+                            <td><h4>NOVO ENDEREÇO</h4></td>
                         </tr>
-                        <tr class="produtos-carrinhos">
-                            <td class="produto"><img src="../img/produtos-wella.png" alt="shampoo"></td>
-                            <td class="descricao"><strong>WELLA PROFESSIONALS INVIGO</strong><h5>WELLA</h5><p>Shampoo hidratante.</p></td>
-                            <td class="quantidade-produtos"><input type="number" min="1"></td>
-                            <td class="preco-produto-2"><span>R$ 119,90</span></td>
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
-                                </svg></td>
-                        </tr>
-                        <tr class="produtos-carrinhos">
-                            <td class="produto"><img src="../img/produtos-óleo.png" alt="óleo"></td>
-                            <td class="descricao"><strong>L'ORÉAL PROFESSIONAL NUTRIOIL</strong>
-                            <h5>L'oréal</h5><p>Óleo reparador hidratante.</p></td>
-                            <td class="quantidade-produtos"><input type="number" min="1"></td>
-                            <td class="preco-produto-3"><span>R$ 99,90</span></td>
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
-                                </svg></td>
+                        <tr>
+                            <td><p><input type="text" id="cep-pagamento" placeholder="CEP*"></p>
+                            <p><input type="text" id="ende-pagamento" placeholder="Endereço*"></p>
+                            <p><input type="text" id="numero-pagamento" placeholder="Número*"></p>
+                            <p><input type="text" id="complemento-pagamento" placeholder="Complemento*"></p>
+                            <p><input type="text" id="bairro-pagamento" placeholder="Bairro*"></p>
+                            <p><input type="text" id="cidade-pagamento" placeholder="Cidade*"></p>
+                            <p><input type="text" placeholder="Estado*"></p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="carrinho-resumo">
-                <h2>RESUMO</h2>
-                <hr />
-                <div class="cupom-resumo">
-                    <label for="cupom-desconto">
-                        <h4>Cupom de desconto</h4>
-                    </label>
-                        <input type="text" id="cupom-desconto" placeholder="Digite código do cupom:">
-                        <button type="submit" id="botao-ok-cupom" name="Cupom.Submit"><strong>OK</strong></but>
-                </div>
-                <hr>
-                <div class="subtotal-resumo">
-                    <table id="carrinho-resumo-subtotal">
-                        <tr>
-                            <td>
-                                <h3>Subtotal (<span id="quantidade-itens">0</span> item)</h3>
-                            </td>
-                            <td>R$ <span id="total-carrinho">0</span></td>
-                        </tr>
-                        <tr>
-                            <td>Descontos</td>
-                            <td>- R$ <span id="descontos-carrinho">0</span></td>
-                        </tr>
-                        <tr>
-                            <td>Cupom</td>
-                            <td>- R$ <span id="cupom-desconto">0</span></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="total-pedido">
-                    <img src="../img/icon-carrinho-furndo-rosa-2.png" alt="carrinho-de-compras">
-                    <h4>Total do pedido:</h4>
-                    R$ <span id="total-pedido-carrinho"></span>
-                </div>
-                <div class="botoes-resumo">
-                    <button type="submit" id="finalizar-compra-carrinho" name="Finalizar.Submit"><a href="../pages/pagamento.html"><strong>FINALIZAR COMPRA</strong></a></button>
-                    <button type="submit" id="continuar-comprando-carrinho" name="Comprando.Submit"><strong>CONTINUAR COMPRANDO</strong></button>
+            <div class="pagamento-pagamento">
+                <div class="pagamento">
+                    <ul>
+                        <li>
+                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de débito</a></h4>
+                            <ul>
+                                <input type="text" id="num-debito" placeholder="Número do cartão">
+                                <input type="text" id="nome-debito" placeholder="Nome impresso no cartão">
+                                <input type="month" id="venci-debito" placeholder="Vencimento (mês/ano)">
+                                <input type="text" id="cvv-debito" placeholder="CVV">
+                                <input type="text" id="cpf-debito" placeholder="CPF do titular">
+                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de crédito</a></h4>
+                            <ul>
+                                <input type="text" id="num-credito" placeholder="Número do cartão">
+                                <input type="text" id="nome-credito" placeholder="Nome impresso no cartão">
+                                <input type="month" id="venci-debito" placeholder="Vencimento (mês/ano)">
+                                <input type="text" id="cvv-debito" placeholder="CVV">
+                                <select name="juros" id="juros-debito" required>
+                                    <option value="selecionar">Em quantas vezes quer pagar?</option>
+                                    <option value="1x">1x sem juros</option>
+                                    <option value="2x">2x sem juros</option>
+                                    <option value="3x">3x sem juros</option>
+                                    <option value="4x">4x sem juros</option>
+                                    <option value="5x">5x com juros</option>
+                                </select>
+                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4><a href="javascript:void(0)" aria-haspopup="true">PIX</a></h4>
+                            <ul>
+                                <img src="" alt="">
+                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão-Presente</a></h4>
+                            <ul>
+                                <label for="cartao-presente">Insira o código do cartão:</label>
+                                <input type="text" id="cartao-presente" placeholder="Código">
+                                <img src="" alt="">
+                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
         </section>
     </main>
     <footer>
@@ -295,7 +280,6 @@
                                     <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                                 </svg>Horário de atendimento 08:30 às 19:30
                             </div>
-
                         </li>
                     </ul>
                 </nav>
@@ -308,6 +292,4 @@
         </section>
     </footer>
 </body>
-
-
 </html>

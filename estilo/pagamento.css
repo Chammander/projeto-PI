@@ -1,0 +1,22 @@
+.pagamento-endereco input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #551c1c;
+    opacity: 75%;
+}
+
+.pagamento-endereco ::placeholder{
+    color: #551c1c;
+    opacity: 75%;
+}
+
+.pagamento-endereco thead{
+    background-color: #ffb7b7;
+    color: white;
+}
+
+.entrega{
+    border: 2px solid #ffb7b7;
+    width: 40%;
+}
