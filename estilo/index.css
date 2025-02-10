@@ -1,4 +1,3 @@
-
 /*   Cabeçalho   */
 
 .div-header-primeira,
@@ -14,63 +13,82 @@ footer {
     width: 100%;
 }
 
-.div-header-primeira{
+.div-header-primeira {
     height: 50px;
 }
 
-.div-header-segundo{
+.div-header-segundo {
     height: 80px;
     align-content: center;
 }
 
 .section-submenu {
-    height: 60px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.div-juros,.div-meus-pedidos,.div-atendimento,.div-contato,.div-frete{
+.div-juros,
+.div-meus-pedidos,
+.div-atendimento,
+.div-contato,
+.div-frete {
     height: 50px;
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.div-frete{
+.div-frete {
     margin-left: 5%;
 }
-.div-juros{
+
+.div-juros {
     margin-left: 3%;
 }
-.div-meus-pedidos{
+
+.div-meus-pedidos {
     margin-left: 45%;
     margin-right: 3%;
 }
-.div-atendimento{
+
+.div-atendimento {
     margin-right: 3%;
 }
-.div-contato{
+
+.div-contato {
     margin-right: 5%;
 }
 
-.img-balao-de-conversa,.img-caminhao-frete,.img-cartao-juros,.img-telefone{
+.img-balao-de-conversa,
+.img-caminhao-frete,
+.img-cartao-juros,
+.img-telefone {
     margin-right: 5px;
 }
 
-.img-caminhao-frete,.img-cartao-juros{
+.img-caminhao-frete,
+.img-cartao-juros {
     height: 70%;
 }
 
-.img-balao-de-conversa, .img-telefone{
+.img-balao-de-conversa,
+.img-telefone {
     height: 50%;
 }
 
-.div-login,.div-favoritos,.div-carrinho{
+.div-login,
+.div-favoritos,
+.div-carrinho {
     height: 80px;
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.div-logo-beybyhair a{
+.div-logo-beybyhair a {
     margin-left: 30%;
     height: 80px;
     width: 250px;
@@ -78,80 +96,83 @@ footer {
     align-items: center;
 }
 
-.div-logo-beybyhair a:hover{
+.div-logo-beybyhair a:hover {
     text-decoration: none;
 }
 
-.div-logo-beybyhair a h2{
+.div-logo-beybyhair a h2 {
     padding-top: 16px;
 }
 
-.img-logo-beybyhair{
+.img-logo-beybyhair {
     height: 55%;
     margin-right: 1px;
 }
 
-.img-icon-user-branco,.img-coracao-branco,.img-carrinho-branco{
+.img-icon-user-branco,
+.img-coracao-branco,
+.img-carrinho-branco {
     height: 40%;
 }
 
-.div-login{
+.div-login {
     margin-left: 3%;
     margin-right: 5%;
 }
 
-.div-favoritos{
+.div-favoritos {
     margin-right: 5%;
 }
 
-.div-carrinho{
+.div-carrinho {
     margin-right: 10%;
 }
 
-.section-submenu nav ul{
+.section-submenu nav ul {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     list-style-type: none;
 }
 
-.section-submenu nav ul li a{
+.section-submenu nav ul li a {
     padding: 1px 20px;
-    display:block;
+    display: block;
     transition: .3s;
 }
 
-.section-submenu nav ul li{
+.section-submenu nav ul li {
     font-size: 16px;
 }
 
-.section-submenu nav ul li a:hover{
+.section-submenu nav ul li a:hover {
     background-color: #eda3a3;
     text-decoration: underline;
     z-index: 1;
+    color: white;
 }
 
-.li-drop-hover{
-    position:relative;
+.li-drop-hover {
+    position: relative;
 }
 
-.li-drop-hover .drop-submenu{
+.drop-submenu {
     position: absolute;
     background-color: #eda3a3;
     width: 100%;
     height: 0;
-    overflow:hidden;
+    overflow: hidden;
     transition: .3s;
-    z-index:1;
+    z-index: 1;
 }
 
-.li-drop-hover:hover .drop-submenu{
-    height:fit-content;
+.li-drop-hover:hover .drop-submenu {
+    height: fit-content;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.div-barra-pesquisa{
+.div-barra-pesquisa {
     height: 80px;
     width: 300px;
     display: block;
@@ -159,7 +180,7 @@ footer {
     padding-top: 20px;
 }
 
-input#barra-pesquisa{
+input#barra-pesquisa {
     margin: 0 auto;
     width: 100%;
     height: 45px;
@@ -167,22 +188,25 @@ input#barra-pesquisa{
     font-size: 1rem;
     border: 1px solid #eda3a3;
     outline: none;
-    &:focus{
+
+    &:focus {
         border: 1px solid #551c1c;
         transition: 0.35s ease;
         color: #551c1c;
-        &::-moz-placeholder{
+
+        &::-moz-placeholder {
             transition: opacity 0.45s ease;
             opacity: 0;
         }
-        &::-ms-placeholder{
+
+        &::-ms-placeholder {
             transition: opacity 0.45s ease;
             opacity: 0;
         }
     }
 }
 
-.lupa-barra-pesquisa{
+.lupa-barra-pesquisa {
     position: relative;
     float: right;
     width: 75px;
@@ -199,7 +223,7 @@ input#barra-pesquisa{
 /*   BOdyyy    */
 
 /*Começo carrosel banner*/
-.div-img-carrosel-banner img{
+.div-img-carrosel-banner img {
     width: 100%;
     position: relative;
     margin: auto;
@@ -211,7 +235,8 @@ input#barra-pesquisa{
     margin-top: 10px;
 }
 
-.text,.numbertext {
+.text,
+.numbertext {
     color: #e7070700;
     font-size: 12px;
     padding: 8px 12px;
@@ -219,13 +244,13 @@ input#barra-pesquisa{
     top: 0;
 }
 
-.botoes-carrosel{
+.botoes-carrosel {
     width: 100%;
     display: inline-flex;
     justify-content: center;
 }
 
-.dot{
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -235,18 +260,22 @@ input#barra-pesquisa{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+
+.active,
+.dot:hover {
     background-color: #eda3a3;
 }
 
-.prev,.next{
+.prev,
+.next {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     text-decoration: none;
 }
 
@@ -256,45 +285,54 @@ input#barra-pesquisa{
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
+
 /*fim carrosel banner */
 
 /*Começo carrosel de marcas*/
 
-.div-img-marcas img{
+.div-img-marcas img {
     margin: 0 20px;
     height: 100px;
 }
-.div-carrosel-marcas{
+
+.div-carrosel-marcas {
     width: 90%;
     padding-left: 60px 0;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.section-carrosel-marcas{
+.section-carrosel-marcas {
     width: 100%;
     justify-items: center;
 }
 
-@keyframes slide{
-    from{
+@keyframes slide {
+    from {
         transform: translateX(0);
-    } to {
+    }
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-.div-img-marcas{
-    display:inline-block;
+.div-img-marcas {
+    display: inline-block;
     animation: 30s slide infinite linear;
 }
 
 /*Fim carrosel de marcas*/
 
-.section-novidades-bruna{
+.section-novidades-bruna {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -303,19 +341,19 @@ input#barra-pesquisa{
 }
 
 /*  carrosel de produtos*/
-.div-lista-produto{
+.div-lista-produto {
     width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
 }
 
-.div-lista-produto li{
+.div-lista-produto li {
     list-style: none;
     display: flex;
 }
 
-.div-lista-produto h2{
+.div-lista-produto h2 {
     width: 100%;
     text-align: center;
 }
@@ -325,17 +363,17 @@ input#barra-pesquisa{
     text-align: center;
 }
 
-.lista-produto{
+.lista-produto {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.div-produto{
+.div-produto {
     display: flex;
     flex-direction: column;
 }
 
-.button-produto{
+.button-produto {
     color: white;
     background-color: #ffcccc;
     height: 50px;
@@ -343,6 +381,11 @@ input#barra-pesquisa{
     font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
     border: #ffcccc;
     border-radius: 5px;
+
+    a {
+        color: white;
+        font-style: none;
+    }
 }
 
 /*   fim carrosel de produtos*/
@@ -355,45 +398,46 @@ input#barra-pesquisa{
 .section-footer nav ul {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     list-style-type: none;
 }
 
 .section-footer li {
     display: flex;
     flex-direction: column;
-    position:relative;
+    position: relative;
     width: 100%;
 }
 
 .div-footer-copyright {
-    justify-items:center;
+    justify-items: center;
 }
 
-.section-footer nav ul li div{
+.section-footer nav ul li div {
     padding-top: 10px;
 }
 
-.section-footer nav ul li a{
+.section-footer nav ul li a {
     padding-top: 10px;
     text-decoration: none;
 }
 
-.section-footer nav ul li h4{
+.section-footer nav ul li h4 {
     margin-bottom: 0px;
 }
 
-#id-footer-redes-sociais{
+#id-footer-redes-sociais {
     display: inline;
 }
 
-.section-footer nav ul li a svg{
+.section-footer nav ul li a svg {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
 }
 
-#idfooter-atendimento div svg{
+#idfooter-atendimento div svg {
     padding-right: 7px;
 }
+
 /*  FIM FOOTER  */

@@ -1,9 +1,17 @@
+.pag-pagamento-entrega{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
 .pagamento-endereco input{
     border-top: none;
     border-left: none;
     border-right: none;
     border-color: #551c1c;
     opacity: 75%;
+    width: 90%;
 }
 
 .pagamento-endereco ::placeholder{
@@ -14,9 +22,72 @@
 .pagamento-endereco thead{
     background-color: #ffb7b7;
     color: white;
+    height: 20%;
 }
 
 .entrega{
     border: 2px solid #ffb7b7;
-    width: 40%;
+    width: 100%;
+}
+
+.entrega tbody tr{
+    display: flex;
+    justify-content: center;
+}
+
+
+.pagamento-endereco{
+    width: 50%;
+}
+
+.pagamento-pagamento{
+    border: 1px solid #ffb7b7;
+    width: 50%;
+}
+
+.pagamento-pagamento h2{
+    background-color: #ffb7b7;
+    color: white;
+    margin: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-pagamento-hover{
+    position: relative;
+}
+
+.pagamento{
+    background-color: #ececec;
+    width: 30%;
+    height: 100%;
+}
+
+.pagamento ul{
+    margin: 0;
+    list-style: none;
+}
+
+.menu-pagamentos{
+    position:fixed;
+    width: 100%;
+    height: 0;
+    overflow:auto;
+    transition: .3s;
+    z-index:1;
+
+}
+
+.menu-pagamento-hover:active .menu-pagamentos{
+    height:fit-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.butao-finalizar{
+    background-color: #ffb7b7;
+    color: white;
+    border: none;
 }

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de pagamento</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../estilo/index.css">
     <link rel="stylesheet" href="../estilo/default.css">
-    <link rel="stylesheet" href="../estilo/pagamento.css">
+    <link rel="stylesheet" href="../estilo/produto.css">
     <script src="../script/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
+
 <body>
     <header>
         <section class="section-primeira-faixa">
@@ -140,88 +144,72 @@
         </section>
     </header>
     <main>
-        <section class="pag-pagamento-entrega">
-            <div class="pagamento-endereco">
-                <table class="entrega">
-                    <thead>
-                        <tr>
-                            <th><h2>ENTREGA</h2></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><h4>NOVO ENDEREÇO</h4></td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="text" id="cep-pagamento" placeholder="CEP*"></p>
-                            <p><input type="text" id="ende-pagamento" placeholder="Endereço*"></p>
-                            <p><input type="text" id="numero-pagamento" placeholder="Número*"></p>
-                            <p><input type="text" id="complemento-pagamento" placeholder="Complemento*"></p>
-                            <p><input type="text" id="bairro-pagamento" placeholder="Bairro*"></p>
-                            <p><input type="text" id="cidade-pagamento" placeholder="Cidade*"></p>
-                            <p><input type="text" placeholder="Estado*"></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="pagamento-pagamento">
-                <h2>PAGAMENTO</h2>
-                <div class="pagamento">                    
-                    <ul>
-                        <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de débito</a></h4>
-                            <ul class="menu-pagamentos">
-                                <h4>CARTÃO DE DÉBITO</h4>
-                                <input type="text" id="num-debito" placeholder="Número do cartão">
-                                <input type="text" id="nome-debito" placeholder="Nome impresso no cartão">
-                                <input type="month" id="venci-debito" placeholder="Vencimento (mês/ano)">
-                                <input type="text" id="cvv-debito" placeholder="CVV">
-                                <input type="text" id="cpf-debito" placeholder="CPF do titular">
-                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
-                            </ul>
-                        </li>
-                        <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de crédito</a></h4>
-                            <ul class="menu-pagamentos">
-                                <h4>CARTÃO DE CRÉDITO</h4>
-                                <input type="text" id="num-credito" placeholder="Número do cartão">
-                                <input type="text" id="nome-credito" placeholder="Nome impresso no cartão">
-                                <input type="month" id="venci-debito" placeholder="Vencimento (mês/ano)">
-                                <input type="text" id="cvv-debito" placeholder="CVV">
-                                <select name="juros" id="juros-debito" required>
-                                    <option value="selecionar">Em quantas vezes quer pagar?</option>
-                                    <option value="1x">1x sem juros</option>
-                                    <option value="2x">2x sem juros</option>
-                                    <option value="3x">3x sem juros</option>
-                                    <option value="4x">4x sem juros</option>
-                                    <option value="5x">5x com juros</option>
-                                </select>
-                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
-                            </ul>
-                        </li>
-                        <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">PIX</a></h4>
-                            <ul class="menu-pagamentos">
-                                <h4>PIX</h4>
-                                <img src="" alt="">
-                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
-                            </ul>
-                        </li>
-                        <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão-Presente</a></h4>
-                            <ul class="menu-pagamentos">
-                                <h4>CARTÃO PRESENTE</h4>
-                                <label for="cartao-presente">Insira o código do cartão:</label>
-                                <input type="text" id="cartao-presente" placeholder="Código">
-                                <img src="" alt="">
-                                <button class="butao-finalizar"><h4>FINALIZAR PEDIDO</h4></button>
-                            </ul>
-                        </li>
-                    </ul>
+        <section class="produto">
+            <div class="div-page-produto">
+                <div class="imagens-produto">
+                    <img src="../img/produtos-wella.png" alt="">
+                    <img src="../img/produto-wella2.png" alt="">
+                    <img src="../img/produto-wella3.png" alt="">
                 </div>
+
+                <div class="imagem-selecionada">
+                    <img src="../img/produtos-wella.png" alt="">
+                </div>
+
+                <div class="descricao-produto">
+                    <h1>WELLA PROFESSIONALS INVIGO</h1>
+                    <p>Avalie agora</p>
+                    <h2>R$119,90</h2>
+                    <p><strong>2x R$59,95</strong> sem juros</p>
+                    <p>Wella Professionals Invigo Nutri-Enrich Shampoo para cabelos secos, ressecados ou quimicamente
+                        tratados em tamanho salao.</p>
+                    <p><strong>Marca:</strong> WELLA</p>
+                    <button class="button-produto"><a href="">COMPRAR</a></button>
+                </div>
+
             </div>
+
+            <div class="informacoes-produto">
+                <div>
+                    <h3>DESCRIÇÃO LONGA</h3>
+                    <hr />
+                    <h3>WELLA PROFESSIONALS INVIGO</h3>
+                    <p><strong>Wella Professionals Invigo Nutri-Enrich Shampoo</strong> hidrata e nutre os fios desde o
+                        momento da lavagem e,
+                        assim, vai muito alem de limpar. Sua formula e rica em ingredientes que conseguem proporcionar
+                        maciez absoluta e muito brilho, uma vez que suaviza a superficie do cabelo. Afinal, Wella
+                        Professionals Invigo Nutri-Enrich Shampoo trabalha tanto na reposicao de nutrientes essenciais
+                        como
+                        na hidratacao. Ele ainda possui um perfume luxuoso frutal chipre almiscarado. O embaixador de
+                        Wella
+                        Professionals, Dougllas Dias, que assinou o look da campanha de Invigo Nutri-Enrich, diz: O que
+                        eu
+                        mais gosto dessa linha, e que ela deixa o cabelo cada vez mais tratado, com um toque sedoso,
+                        macio e
+                        muito brilho. E ainda e possivel intercalar com outros produtos Invigo, como da linha Balance
+                        para
+                        cuidar do seu couro cabeludo ou a Color Brilliance, para quem tem cabelo colorido, por exemplo.
+                        Acao
+                        Goji Berry: uma fruta com alta concentracao de vitaminas antioxidantes, minerais e peptideos que
+                        melhoram a saude do cabelo. Acido Oleico e Pantenol: proporcionam hidratacao e nutricao de alta
+                        performance. Vitamina E: protege o cabelo de danos futuros. Como Usar Wella Professionals Invigo
+                        Nutri-Enrich Conselho de Aplicacao Aplique o shampoo sobre o cabelo umido. Massageie suavemente
+                        e
+                        enxague. Caso necessario, repita o procedimento. Resultado Seu cabelo fica limpo, hidratado e
+                        nutrido, com muita maciez e brilho.</p>
+                </div>
+
+                <div class="avaliacao-produto">
+                    <h3>AVALIAÇÕES</h3>
+                    <button class="button-produto"><a href="">AVALIAR</a></button>
+                    <hr />
+                    <p>Seja o primeiro a avaliar este produto</p>
+                </div>
+
+            </div>
+
         </section>
+
     </main>
     <footer>
         <section class="section-footer">
@@ -297,4 +285,5 @@
         </section>
     </footer>
 </body>
+
 </html>
