@@ -147,18 +147,31 @@
         <section class="produto">
             <div class="div-page-produto">
                 <div class="imagens-produto">
-                    <img src="../img/produtos-wella.png" alt="">
-                    <img src="../img/produto-wella2.png" alt="">
-                    <img src="../img/produto-wella3.png" alt="">
+                    <img src="../img/produto-wella1.png" onclick="changeImage('../img/produto-wella1.png', this)"
+                        class="selected" alt="">
+                    <img src="../img/produto-wella2.png" onclick="changeImage('../img/produto-wella2.png', this)"
+                        alt="">
+                    <img src="../img/produto-wella3.png" onclick="changeImage('../img/produto-wella3.png', this)"
+                        alt="">
                 </div>
 
                 <div class="imagem-selecionada">
-                    <img src="../img/produtos-wella.png" alt="">
+                    <img id="mainImage" class="main-image" src="../img/produto-wella1.png" alt="">
                 </div>
+
+                <!--Script para mudar a imagem-->
+                <script>
+                        function changeImage(src, element) {
+                            document.getElementById('mainImage').src = src;
+                            document.querySelectorAll('.imagens-produto img').forEach(img => img.classList.remove('selected'));
+                            element.classList.add('selected');
+                        }
+                </script>
 
                 <div class="descricao-produto">
                     <h1>WELLA PROFESSIONALS INVIGO</h1>
-                    <p>Avalie agora</p>
+
+                    <p class="estrelas-avaliar"><img src="../img/icon-estrelas-avaliar.png" alt=""><strong> Avalie agora</strong></p>
                     <h2>R$119,90</h2>
                     <p><strong>2x R$59,95</strong> sem juros</p>
                     <p>Wella Professionals Invigo Nutri-Enrich Shampoo para cabelos secos, ressecados ou quimicamente
@@ -166,6 +179,7 @@
                     <p><strong>Marca:</strong> WELLA</p>
                     <button class="button-produto"><a href="">COMPRAR</a></button>
                 </div>
+
 
             </div>
 
@@ -200,8 +214,7 @@
                 </div>
 
                 <div class="avaliacao-produto">
-                    <h3>AVALIAÇÕES</h3>
-                    <button class="button-produto"><a href="">AVALIAR</a></button>
+                    <h3 class="avaliacoes">AVALIAÇÕES<button class="button-produto"><a href="">AVALIAR</a></button></h3>
                     <hr />
                     <p>Seja o primeiro a avaliar este produto</p>
                 </div>

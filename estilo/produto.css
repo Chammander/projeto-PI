@@ -20,6 +20,13 @@
 
 .imagens-produto img {
     height: 25%;
+    margin-bottom: 2px;
+    cursor: pointer; /*Deixa o cursor do mouse com aquela mãozinha apontando*/
+}
+
+.imagens-produto img.selected {
+    border: 2px solid #fabebe; /* Quadrado rosa ao redor da imagem selecionada */
+    border-radius: 3px;
 }
 
 .imagem-selecionada {
@@ -33,26 +40,60 @@
 .descricao-produto {
     width: 35%;
     height: 100%;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.descricao-produto h1 h2 p{
+.descricao-produto h1 {
+    font-size: 22pt;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.descricao-produto h2 {
+    font-size: 22pt;
     margin: 0px;
+}
+
+.descricao-produto p {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.estrelas-avaliar img{
+    width:80px;
+    margin-right: 10px;
+}
+
+.estrelas-avaliar{
+    font-size: 11pt;
+    color:#eda3a3;
+    display: flex;
+}
+
+.descricao-produto button {
+    height: 40px;
+    font-size: 17pt;
 }
 
 .informacoes-produto {
     width: 75%;
 }
 
-.avaliacao-produto{
+.avaliacao-produto {
     margin-top: 3%;
     margin-bottom: 2%;
 }
 
-.button-produto {
-    height: 30px;
-    font-size: 20px;
-
+.avaliacoes {
+    display:flex;
+    justify-content: space-between;
 }
+
+.avaliacoes button{
+    height: 28px;
+    font-size: 12pt;
+}
+
