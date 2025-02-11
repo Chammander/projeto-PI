@@ -26,6 +26,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-/* carrinho de compras*/
+/* menu responsivo login e pagamento*/
 
-document.getElementById("finalizar-compra-carrinho").addEventListener("click",finalizar)

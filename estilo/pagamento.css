@@ -62,7 +62,6 @@
 .pagamento{
     background-color: #ececec;
     width: 30%;
-    height: 100%;
 }
 
 .pagamento ul{
@@ -80,10 +79,8 @@
 
 }
 
-.menu-pagamento-hover:active .menu-pagamentos{
-    height:fit-content;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.menu-pagamentos{
+    left: 100%;
 }
 
 .butao-finalizar{

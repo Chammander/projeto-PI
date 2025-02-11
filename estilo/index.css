@@ -373,6 +373,10 @@ input#barra-pesquisa {
     flex-direction: column;
 }
 
+button{
+    cursor: pointer;
+}
+
 .button-produto {
     color: white;
     background-color: #ffcccc;

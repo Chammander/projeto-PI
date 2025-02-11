@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../estilo/index.css">
     <link rel="stylesheet" href="../estilo/default.css">
     <link rel="stylesheet" href="../estilo/pagamento.css">
-    <script src="../script/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
@@ -167,10 +166,10 @@
             </div>
             <div class="pagamento-pagamento">
                 <h2>PAGAMENTO</h2>
-                <div class="pagamento">                    
+                <div class="pagamento">
                     <ul>
                         <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de débito</a></h4>
+                            <button class="btn active" date-target="#dropdireita">Cartão de débito</button>
                             <ul class="menu-pagamentos">
                                 <h4>CARTÃO DE DÉBITO</h4>
                                 <input type="text" id="num-debito" placeholder="Número do cartão">
@@ -182,7 +181,7 @@
                             </ul>
                         </li>
                         <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão de crédito</a></h4>
+                            <button class="btn active" date-target="#dropdireita">Cartão de crédito</button>
                             <ul class="menu-pagamentos">
                                 <h4>CARTÃO DE CRÉDITO</h4>
                                 <input type="text" id="num-credito" placeholder="Número do cartão">
@@ -201,7 +200,7 @@
                             </ul>
                         </li>
                         <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">PIX</a></h4>
+                            <button class="btn active" date-target="#dropdireita">PIX</button>
                             <ul class="menu-pagamentos">
                                 <h4>PIX</h4>
                                 <img src="" alt="">
@@ -209,7 +208,7 @@
                             </ul>
                         </li>
                         <li class="menu-pagamento-hover">
-                            <h4><a href="javascript:void(0)" aria-haspopup="true">Cartão-Presente</a></h4>
+                            <button class="btn active" date-target="#dropdireita">Cartão-Presente</button>
                             <ul class="menu-pagamentos">
                                 <h4>CARTÃO PRESENTE</h4>
                                 <label for="cartao-presente">Insira o código do cartão:</label>
@@ -297,4 +296,5 @@
         </section>
     </footer>
 </body>
+<script src="../script/script.js"></script>
 </html>
