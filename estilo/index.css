@@ -17,7 +17,7 @@ footer {
     height: 50px;
 }
 
-.div-header-segundo {
+.div-header-segundo{
     height: 80px;
     align-content: center;
 }
@@ -28,6 +28,7 @@ footer {
     align-items: center;
     justify-content: center;
     align-content: center;
+    height: 80px;
 }
 
 .div-juros,
@@ -150,6 +151,10 @@ footer {
     text-decoration: underline;
     z-index: 1;
     color: white;
+}
+
+.titulos{
+    height: 80px;
 }
 
 .li-drop-hover {
@@ -332,13 +337,15 @@ input#barra-pesquisa {
 
 /*Fim carrosel de marcas*/
 
-.section-novidades-bruna {
+.section-novidades-bruna, .banner {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+
 
 /*  carrosel de produtos*/
 .div-lista-produto {
@@ -375,6 +382,14 @@ input#barra-pesquisa {
 
 button{
     cursor: pointer;
+}
+
+.section-produtos-preço img{
+    height: 300px;
+}
+
+.div-descricao-produto{
+    height: 340px;
 }
 
 .button-produto {

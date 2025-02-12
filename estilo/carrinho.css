@@ -2,7 +2,17 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carrinho-compras{
+    margin-right: 10%;
+}
+
+.tabela-tabela{
+    width: 100%;
+    height: 90%;
 }
 
 .carrinho-resumo hr{
